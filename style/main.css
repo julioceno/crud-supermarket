@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body, #container {
+    height: 100%;
+}
+
+
+:root {
+
+    --color-yellow:#ffc93c;
+    --color-blue:#07689f;
+    --color-cyan:#40a8c4;
+    --color-cyan-weak:#a2d5f2;
+    --color-white: #f1f1f1;    
+
+    font-size: 62.6%;
+}
