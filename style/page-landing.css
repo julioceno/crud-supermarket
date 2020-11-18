@@ -17,6 +17,7 @@
 
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .logo {
@@ -24,7 +25,6 @@
     height: 5rem;
     margin: 0 0 0 1rem;
 
-    
     position: relative;
     top: 1rem;
 
@@ -34,8 +34,108 @@
 
 }
 
-.logo img {
-    height: 100%;
+.search {
+    margin: 0 1rem 0 0;
+    background: var(--color-white);
+    width: 13rem;
+    height: 3rem;
+    border-radius: 3rem;
+
+    display: flex;
+}
+
+.search input[type="submit"], 
+.search input[type="search"] {
+    width: 3rem;
+    height: 30px;
+
+    text-decoration: none;
+    border: none;
+    background: var(--color-white);
+    overflow: hidden;
+
+    outline: none;
 }
 
 
+
+.search input[type="submit"] {
+    background-image: url(../images/search.png);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
+    
+    border-radius: 3rem 0 0 3rem;
+}
+
+.search input[type="submit"]:hover {
+    background: var(--color-grey);
+
+    background-image: url(../images/search.png);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
+}
+
+.search input[type="search"] {
+    width: 100%;
+    border-radius: 0 3rem 3rem 0;
+}
+
+.hamburguer-container {
+    height: 5rem;
+    width: 6rem;
+    
+    padding: .6rem 0 0 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.hamburguer::before {
+    content: '';
+    position: absolute;
+    
+    top: 1rem;
+    right: 1rem;
+    
+    width: 10%;
+    height: 1.5%;
+    
+    border-radius: 20px;
+    
+    transition: 1s ease;
+
+    background-color: #fff;
+}
+
+.hamburguer::after {
+    content: '';
+    position: absolute;
+    
+    top: 3rem;
+    right: 1rem;
+    
+    width: 6%;
+    height: 1.5%;
+    
+    border-radius: 20px;
+    
+    transition: 1s ease;
+
+    background-color: #fff;
+}
+
+#hamburguer:checked  ~ label .hamburguer::before {
+    transform: rotate(225deg);
+    top: 2rem;
+    width: 10%;
+    height: 1.5%;
+}
+
+#hamburguer:checked  ~ label .hamburguer::after {
+    transform: rotate(-405deg);
+    top: 2rem;
+    width: 10%;
+    height: 1.5%;
+}

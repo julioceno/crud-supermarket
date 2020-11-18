@@ -15,7 +15,8 @@ html, body, #container {
     --color-blue:#07689f;
     --color-cyan:#40a8c4;
     --color-cyan-weak:#a2d5f2;
-    --color-white: #f1f1f1;    
+    --color-white: #f1f1f1;   
+    --color-grey: #e8e8e8; 
 
     font-size: 62.6%;
 }
