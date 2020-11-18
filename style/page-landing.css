@@ -21,8 +21,12 @@
 
 .logo {
     width: 14rem;
-    height: 3rem;
+    height: 5rem;
     margin: 0 0 0 1rem;
+
+    
+    position: relative;
+    top: 1rem;
 
     background-image: url(../images/your-logo.png);
     background-repeat: no-repeat;
