@@ -126,6 +126,7 @@
     background-color: #fff;
 }
 
+
 #hamburguer:checked  ~ label .hamburguer::before {
     transform: rotate(225deg);
     top: 2rem;
