@@ -6,37 +6,89 @@
 
 }
 
-.header {
-    background-color: var(--color-blue);
-    color: var(--color-white);
+.main-container {
+    height: calc(100% - 6rem);
+    font-family: 'Open Sans', sans-serif;
 
-    height: 6rem;
+    color: #40a8c4;
+}
 
-    border-bottom: 4px solid var(--color-yellow);
+
+.title {
+    margin: 4rem 0 0 4rem;
+
+    font-size: 3rem;
+}
 
 
+.search {
+    margin: 2rem 0 0 4rem;
+
+
+    background-color: var(--color-white-strong);
+    border: 1px solid var(--color-grey);
+    width: 30rem;
+    height: 2.5rem;
+    
     display: flex;
-    align-items: center;
-    justify-content: space-between;
 
-    overflow: hidden;
+
+}
+.search input[type="submit"],
+.search input[type="search"] {
+    outline: none;
+    border: none;
+    width: 100%;
+
 }
 
-.logo {
-    width: 14rem;
-    height: 5rem;
-    margin: 2rem 0 0 1rem;
 
-    background-image: url(../images/your-logo.png);
+.search input[type="submit"] {
+    width: 3rem;
+    background-color: var(--color-white-strong);
+
+    
+    background-image: url(/images/search.png);
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%;
-
+    background-size: 150%;
+    
 }
 
+.search input[type="search"] {
+    padding-left: .3rem;
+}
+.search input[type="search"]::placeholder {
+    padding-left: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 .search {
     margin: 0 0 0 0;
     background: var(--color-white);
-    width: 13rem;
+    width: 30rem;
     height: 3rem;
     border-radius: 3rem;
 
@@ -80,78 +132,14 @@
     width: 100%;
     border-radius: 0 3rem 3rem 0;
    padding-left: 2%;
-}
-
-.menu-container {
-    width: 1.5rem;
-}
-
-.menu-hamburguer::before {
-    content: '';
-    position: absolute;
-    
-    top: 1rem;
-    right: 1rem;
-    
-    width: 10%;
-    height: .8rem;
-    
-    border-radius: 2rem;
-    
-    transition: 1s ease;
-
-    background-color: #fff;
-}
-
-.menu-hamburguer::after {
-    content: '';
-    position: absolute;
-    
-    top: 3rem;
-    right: 1rem;
-    
-    width: 6%;
-    height: .8rem;
-
-    
-    border-radius: 2rem;
-    
-    transition: 1s ease;
-
-    background-color: #fff;
-}
-
-
-#menu-hamburguer:checked  ~ label .menu-hamburguer::before {
-    transform: rotate(225deg);
-    top: 2.3rem;
-    width: 10%;
-    height: 1%;
-}
-
-#menu-hamburguer:checked  ~ label .menu-hamburguer::after {
-    transform: rotate(-405deg);
-    top: 2.3rem;
-    width: 10%;
-    height: 1%;
-}
-
-.menu {
-    display: none;
-}
-@media(min-width: 640px) {
-.header {
-    height: 8rem;
+   font-family: 'Cabin', sans-serif;
 
 }
-
-.logo {
-    width: 20rem;
-    height: 10rem;
-    margin: 6rem 0 0 3rem;
-}
+ */
 
 
+ /*
+ 
 .search {
     width: 25rem;
 }
@@ -179,53 +167,10 @@
     font-size: 1.5rem;
 }
 
-    /* menu hamburguer*/
+ */
 
-    
-
-.menu-hamburguer::before {
-    top: 2.5rem;
-    right: 2rem;
-    
-    width: 7%;
-}
-
-.menu-hamburguer::after {
-    top: 4.5rem;
-    right: 2rem;
-    
-    width: 4%;
-}
-
-
-#menu-hamburguer:checked  ~ label .menu-hamburguer::before {
-    top: 3.5rem;
-    width: 7%;
-}
-
-#menu-hamburguer:checked  ~ label .menu-hamburguer::after {
-    top: 3.5rem;
-    width: 7%;
-}
-
-
-
-}
-
-@media(min-width: 1100px) {
-    .header {
-        height: 9rem;
-    
-    }
-    
-    .logo {
-        width: 25rem;
-        height: 15rem;
-        margin: 10rem 0 0 5rem;
-    }
-    
-    
-    .search {
+ /*
+   .search {
         width: 45rem;
         margin-left: 6rem;
 
@@ -253,48 +198,4 @@
         width: 100%;
         font-size: 1.5rem;
     }
-
-    /* menu */
-
-    .menu-hamburguer {
-        display: none;
-    }
-
-    .menu-container {
-        width: 40rem;
-        margin-right: 2rem;
-    }
-   
-    .menu {
-        display: block;
-    }
-    
-    .menu ul {
-        display: flex;
-    }
-    
-    .menu li{
-        padding: 1rem;
-        display: inline-block;
-        text-align: center;
-
-        transition: background .2s;
-    }
-    
-
-    .menu li:hover {
-        background-color: var(--color-yellow);
-    }
-
-    .menu a {
-        font-family: 'Cabin', sans-serif;
-        font-size: 1.4rem;
-        letter-spacing: 0.2rem;
-        line-height: 2rem;
-        color: var(--color-white);
-
-        text-decoration: none;
-    }
-
-
-}
+ */
