@@ -17,7 +17,7 @@
 .title {
     margin: 4rem 0 0 4rem;
 
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 
@@ -48,7 +48,7 @@
     background-color: var(--color-white-strong);
 
     
-    background-image: url(/images/search.png);
+    background-image: url(images/search.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 150%;
