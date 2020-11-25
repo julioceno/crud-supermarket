@@ -9,7 +9,6 @@
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
 
     overflow: hidden;
 
@@ -138,12 +137,9 @@
     .logo {
         width: 25rem;
         height: 15rem;
-        margin: 10rem 0 0 5rem;
+        margin: 10.5rem 0 0 10rem;
     }
     
-    
-  
-
     /* menu */
 
     .menu-hamburguer {
@@ -152,7 +148,8 @@
 
     .menu-container {
         width: 30rem;
-        margin-right: 5rem;
+        margin-left: 30rem;
+
     }
    
     .menu {
@@ -163,12 +160,17 @@
         display: flex;
 
         align-items: center;
+
+        margin-left: 20rem;
+    
     }
     
     .menu li{
-        padding: 1rem;
+        padding: 1rem 1.5rem ;
         display: inline-block;
         text-align: center;
+
+
 
         transition: background .2s;
     }
@@ -179,7 +181,7 @@
     }
 
     .menu :nth-child(3):hover {
-        padding: 1.8rem 1rem;
+        padding: 1.8rem 1.5rem;
 
     }
 

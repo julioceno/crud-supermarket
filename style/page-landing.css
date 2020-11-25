@@ -1,4 +1,5 @@
 #container {
+    height: 100%;
     background: #f3f4f8;
 
     display: flex;
@@ -40,6 +41,7 @@
     border: none;
     width: 100%;
 
+    font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -53,6 +55,14 @@
     background-repeat: no-repeat;
     background-size: 150%;
     
+}
+
+.search input[type="submit"]:hover {
+    background: var(--color-grey);
+    background-image: url(../images/search.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 150%;
 }
 
 .search input[type="search"] {
@@ -84,9 +94,6 @@ table thead {
     border-bottom: 1px solid var(--color-yellow);
 }
 
-table thead tr {
-    margin-bottom: 44rem;
-}
 
 table thead tr th {
     padding: 0 1rem 1rem 1rem;
@@ -94,24 +101,29 @@ table thead tr th {
 
 }
 
+
 table tbody tr {
-    margin-bottom: 2rem;
-    
-}
 
-table tbody tr:nth-child(2) {
     border-top: 1px solid var(--color-cyan-weak);
+}
+
+table tbody tr:nth-child(1) {
+    border-top: none;
 
 }
+
+
 
 table tbody tr td {
-    padding-top: 1rem;
     width: auto;
     max-width: 12rem;
     word-wrap: break-word;
     
     font-size: 1rem;
     text-align: center;
+
+    padding-top: 1.2rem;
+    padding-bottom: .8rem;
 
 }
 
@@ -127,132 +139,71 @@ table tbody tr:hover {
 }
 
 
+@media(min-width: 640px) {
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
 .search {
-    margin: 0 0 0 0;
-    background: var(--color-white);
+    margin: 2rem 0 0 0;
     width: 30rem;
-    height: 3rem;
-    border-radius: 3rem;
-
-    display: flex;
+    position: relative;
+    left: calc(50% - 13rem);
 }
 
-.search input[type="submit"], 
-.search input[type="search"] {
-    width: 3rem;
-    height: 30px;
-
-    text-decoration: none;
-    border: none;
-    background: var(--color-white);
-    overflow: hidden;
-
-    outline: none;
-}
-
-
-
-.search input[type="submit"] {
-    background-image: url(../images/search.png);
-    background-repeat: no-repeat;
-    background-size: 90%;
-    background-position: center;
-    
-    border-radius: 3rem 0 0 3rem;
-}
-
-.search input[type="submit"]:hover {
-    background: var(--color-grey);
-
-    background-image: url(../images/search.png);
-    background-repeat: no-repeat;
-    background-size: 90%;
-    background-position: center;
-}
-
-.search input[type="search"] {
-    width: 100%;
-    border-radius: 0 3rem 3rem 0;
-   padding-left: 2%;
-   font-family: 'Cabin', sans-serif;
-
-}
- */
-
-
- /*
- 
-.search {
-    width: 25rem;
-}
-
-.search input[type="submit"], 
-.search input[type="search"] {
-    width: 5rem;
-    height: 3.5rem;
-}
-
-
-
-.search input[type="submit"],
-.search input[type="submit"]:hover {
-    background-image: url(../images/search.png);
-    background-repeat: no-repeat;
-    background-size: 80%;
-    background-position: center;
-    
-    border-radius: 3rem 0 0 3rem;
-}
-
-.search input[type="search"] {
-    width: 100%;
+table thead tr th {
+    padding: 0 1rem 1rem 1rem;
     font-size: 1.5rem;
+
 }
 
- */
+table tbody tr td{
+    font-size: 1.4rem;
+}
 
- /*
-   .search {
-        width: 45rem;
-        margin-left: 6rem;
+}
 
-    }
+@media(min-width: 1100px) {
+  
+.title {
+    font-size: 4.5rem;
+    font-weight: 1800;
+    text-align: center;
+}
+
+
+.search {
+    margin: 3rem 0 0 0;
+    width: 40rem;
+    height: 3rem;
+    position: relative;
+    left: calc(50% - 18rem);
+}
+
+.search input[type="search"] {
+    padding-left: 1rem;
+}
+
+table tbody tr td {
+    width: auto;
+    max-width: 12rem;
+    word-wrap: break-word;
     
-    .search input[type="submit"], 
-    .search input[type="search"] {
-        width: 5rem;
-        height: 3.5rem;
-    }
-    
-    
-    
-    .search input[type="submit"],
-    .search input[type="submit"]:hover {
-        background-image: url(../images/search.png);
-        background-repeat: no-repeat;
-        background-size: 80%;
-        background-position: center;
-        
-        border-radius: 3rem 0 0 3rem;
-    }
-    
-    .search input[type="search"] {
-        width: 100%;
-        font-size: 1.5rem;
-    }
- */
+    font-size: 1rem;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+table thead tr th {
+    padding: 0 1rem 1rem 1rem;
+    font-size: 2rem;
+
+}
+
+table tbody tr td{
+    font-size: 1.4rem;
+}
+}
