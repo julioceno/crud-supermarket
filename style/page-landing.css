@@ -64,10 +64,60 @@
 
 
 
+.table {
+    margin-top: 6rem;
+
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+}
 
 
+table {
+    border-collapse: collapse;
+}
 
 
+table thead {
+ 
+    border-bottom: 1px solid var(--color-yellow);
+}
+
+table thead tr {
+    margin-bottom: 44rem;
+}
+
+table thead tr th {
+    padding: 0 1rem 1rem 1rem;
+    font-size: 1.4rem;
+
+}
+
+table tbody tr {
+    margin-bottom: 2rem;
+    
+}
+
+table tbody tr td {
+    padding-top: 1rem;
+    width: auto;
+    max-width: 12rem;
+    word-wrap: break-word;
+    
+    font-size: 1.4rem;
+    text-align: center;
+
+}
+
+table tbody tr td img {
+    height: 3rem;
+    
+}
+
+table tbody tr:hover {
+    background-color: rgba(0, 0, 0, .1);
+}
 
 
 

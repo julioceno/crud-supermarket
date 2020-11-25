@@ -1,0 +1,6 @@
+.footer {
+    height: 7rem;
+    width: 100%;
+    background-color: var(--color-blue);
+    border-top: 3px solid var(--color-yellow);
+}
