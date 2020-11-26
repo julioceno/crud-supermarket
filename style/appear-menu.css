@@ -1,11 +1,11 @@
 .appear-menu {
     background-color: var(--color-cyan);
     
-    height: 100%;
+    height: calc(100% - 6rem);
     width: 100%;
 
     position: absolute;
-    top: 5.3rem;
+    top: 6rem;
 
     display: none;
 }

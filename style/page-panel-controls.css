@@ -1,0 +1,117 @@
+#page-panel-controls #container {
+    min-height: 100%;
+    height: auto;
+    background: #f3f4f8;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.panel-controls {
+    background-color: var(--color-cyan);
+    height: 40rem;
+    width: 80%;
+
+    position: relative;
+    left: calc(50% - 40%);
+
+    border: 2px solid var(--color-grey);
+    border-radius: 1rem;
+
+}
+
+.title {
+    font-size: 3rem;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--color-white);
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.options {
+    margin: 2rem 0 0 2rem;
+}
+
+.options #arrow {
+    display: none;
+}
+
+.options label img {
+    height: 2rem;
+    margin: 0 0 .8rem 2.5rem;
+    transition: ease 500ms;
+}
+
+.options #arrow:checked ~ label img {
+    transform: rotate(180deg);
+}
+
+.select-options {
+    background-color: var(--color-white);
+    padding: .5rem;
+    overflow: hidden;
+    width: 8rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+
+.select-options li {
+    display: block;
+    margin-bottom: .9rem;
+    width: 7rem;
+
+    border-radius: .3rem;
+}
+
+.select-options a {
+    color: var(--color-white);
+}
+
+.select-options .create {
+background-color: #a8dda8;
+}
+
+.select-options .update  {
+background-color: #ffe78f;
+    /*fddb3a*/
+}
+
+.select-options .delete  {
+    background-color: #f56a79;
+
+}
+
+.select-options li a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+
+/*Animation*/
+
+@keyframes low {
+    from {
+        opacity: 0;
+        transform: translateY(16);
+    }
+    
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.low-animation {
+    animation-name: low;
+    animation-duration: 900ms;
+}
