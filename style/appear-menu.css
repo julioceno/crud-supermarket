@@ -1,0 +1,29 @@
+.appear-menu {
+    background-color: var(--color-cyan);
+    
+    height: 100%;
+    width: 100%;
+
+    position: absolute;
+    top: 5.3rem;
+
+
+    display: none;
+}
+
+@keyframes appear{
+    from {
+        opacity: 0;
+
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.appear-animation {
+    animation-name: appear;
+    animation-duration: 100ms;
+    
+}

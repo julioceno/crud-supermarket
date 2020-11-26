@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/appear-menu.css">
     <link rel="stylesheet" href="style/page-landing.css">
 
     <!-- fonts -->
@@ -20,12 +21,12 @@
 <body id="page-landing">
     <div id="container">
         
-        <header class="header">
+        <header class="header appear-animation" id="header">
             <div class="logo">
             </div>
 
             <div class="menu-container">
-                <input type="checkbox" name="" id="menu-hamburguer" style="display: none;">
+                <input type="checkbox" id="menu-hamburguer" style="display: none;" onclick="menuHamburguer()">
             
                 <label for="menu-hamburguer">
                     <div class="menu-hamburguer">
@@ -41,6 +42,10 @@
                 </div>
             </div>
         </header>
+
+        <aside class="appear-menu appear-animation" id="appear-menu">
+
+        </aside>
 
         <main class="main-container">
                 
@@ -103,65 +108,5 @@
         </footer>
     </div>
 </body>
+<script src="javascript/page-landing.js"></script>
 </html>
-
-
-<!-- <table >
-    <caption>Produtos</caption>
-    <thead>
-        <tr>
-            <th>Produto</th>
-            <th>Preço</th>
-            <th>Quantidade</th>
-            <th>Total</th>
-        </tr>
-    </thead>
-
-    <tbody>
-        <tr>
-            <td>iPad</td>
-            <td>3289,00</td>
-            <td>5</td>
-            <td>16445,00</td>
-        </tr>
-
-        <tr>
-            <td>Sansung S9</td>
-            <td>2649,00</td>
-            <td>8</td>
-            <td>21192,00</td>
-        </tr>
-    </tbody>
-
-    <tfoot>
-        <tr >
-            <td colspan="3" >Total</td>
-            <td>37637,00</td>
-        </tr>
-
-    </tfoot>
-</table>
-
-<style>
-    table { /*tirando as bordas*/
-        border-collapse: collapse;
-    }
-
-    th, td { /*Adicionando umpadding a todos os th e td*/
-        padding: 10px;
-    }
-
-    thead tr { /*fazendo que a parte do head fique com uma linha traçada em baixo.*/
-        border-bottom: solid 3px #444;
-    }
-
-    tbody tr:hover { /*fazendo que quando passarmos o mouse em cima dos tr que estão presentes no tbody ele fique com outra cor */
-        background-color: #dedede;
-    }
-
-    tfoot { /*estilizando o rodapé*/
-        background-color: #444;
-        color: #fff;
-        font-weight: bold;
-    }
-</style> -->
