@@ -7,10 +7,84 @@
     position: absolute;
     top: 5.3rem;
 
-
     display: none;
 }
 
+.menu-nav {
+    margin-top: 10rem;
+    text-align: center;
+}
+
+.menu-nav div {
+    margin-bottom: 3rem;  
+    padding: 3rem;
+}
+
+
+.menu-nav div::before {
+    content: "";
+    display: block;
+
+    border: 1px solid var(--color-yellow);
+    width: 40rem;
+
+    position: relative;
+    left: calc(50% - 20rem);
+    bottom: 4rem;
+}
+
+.menu-nav div:nth-child(1)::before {
+    content: none;
+}
+
+
+
+.menu-nav div a{
+    font-size: 3rem;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--color-white);
+    letter-spacing: .1rem;
+
+
+}
+
+.menu-nav div:hover a{
+    color: var(--color-blue);
+}
+
+
+@media(min-width: 640px) {
+
+    .appear-menu {
+        height: calc(100% - 7rem);
+        width: 100%;
+    
+        position: absolute;
+        top: 7rem;
+    
+    
+    
+    }
+}
+
+
+@media(min-width: 1100px) {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*animation*/
 @keyframes appear{
     from {
         opacity: 0;
