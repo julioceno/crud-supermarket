@@ -78,8 +78,7 @@ background-color: #a8dda8;
 }
 
 .select-options .update  {
-background-color: #ffe78f;
-    /*fddb3a*/
+background-color: #fddb3a;
 }
 
 .select-options .delete  {
@@ -92,9 +91,6 @@ background-color: #ffe78f;
     font-size: 1.3rem;
     font-family: 'Open Sans', sans-serif;
 }
-
-
-
 
 /*Animation*/
 

@@ -28,8 +28,9 @@ function menuHamburguer() {
   });
 
 
-  // painel de controle
+  /*  painel de controle */
 
+  // arrow
   const checkboxArrow = document.getElementById('arrow') 
   function arrowChecked() {
       const listOfOptions = document.getElementById("select-options")
@@ -37,6 +38,18 @@ function menuHamburguer() {
         listOfOptions.style.display = "none"
      } else {
         listOfOptions.style.display = "flex"
-
      }
   }
+
+
+  // select option
+
+const contentOption = document.getElementById('option') 
+document.querySelectorAll('li a').forEach(link => {
+    link.onclick = function(e) {
+        e.preventDefault()
+        fetch(link.href)
+            .then(resp => resp.text())
+            .then(html => contentOption.innerHTML = html)
+    }
+})
