@@ -45,7 +45,7 @@ function menuHamburguer() {
   // select option
 
 const contentOption = document.getElementById('option') 
-document.querySelectorAll('li a').forEach(link => {
+document.querySelectorAll('.select-options li a').forEach(link => {
     link.onclick = function(e) {
         e.preventDefault()
         fetch(link.href)

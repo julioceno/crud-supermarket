@@ -10,7 +10,7 @@
 
 .panel-controls {
     background-color: var(--color-cyan);
-    height: 40rem;
+    height: 50rem;
     width: 80%;
 
     position: relative;
@@ -29,8 +29,15 @@
     margin-top: 3rem;
 }
 
+.principal-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin: 3rem 0 0 0 ;
+}
+
 .options {
-    margin: 2rem 0 0 2rem;
+    margin: 0 0 0 2rem;
 }
 
 .options #arrow {
@@ -51,7 +58,6 @@
     background-color: var(--color-white);
     padding: .5rem;
     overflow: hidden;
-    width: 8rem;
 
     display: flex;
     flex-direction: column;
@@ -63,10 +69,11 @@
 
 .select-options li {
     display: block;
+
     margin-bottom: .9rem;
     width: 7rem;
-
     border-radius: .3rem;
+
 }
 
 .select-options a {
@@ -111,3 +118,5 @@ background-color: #fddb3a;
     animation-name: low;
     animation-duration: 900ms;
 }
+
+
