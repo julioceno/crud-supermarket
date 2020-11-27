@@ -35,14 +35,16 @@ function menuHamburguer() {
   function arrowChecked() {
       const listOfOptions = document.getElementById("select-options")
      if(checkboxArrow.checked) {
-        listOfOptions.style.display = "none"
-     } else {
         listOfOptions.style.display = "flex"
+     } else {
+        listOfOptions.style.display = "none"
      }
   }
 
 
   // select option
+
+
 
 const contentOption = document.getElementById('option') 
 document.querySelectorAll('.select-options li a').forEach(link => {
@@ -53,3 +55,9 @@ document.querySelectorAll('.select-options li a').forEach(link => {
             .then(html => contentOption.innerHTML = html)
     }
 })
+
+
+// Click automático
+const clickCreate = document.getElementById('create').click()
+
+

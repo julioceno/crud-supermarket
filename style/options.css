@@ -1,6 +1,6 @@
 /* Base */
 
- .create {
+ .create, .update {
     display: flex;
     flex-direction: column;
 
@@ -10,8 +10,8 @@
     align-items: flex-end;
 }
 
-.create .input-block + .input-block{
-    margin-top: .8rem;
+ .input-block + .input-block{
+    margin-top: 1rem;
 }
 
 .input-block {
@@ -37,6 +37,7 @@
     content: "";
     display: block;
     margin-top: .4rem;
+    min-width: 18rem;
 
     border-bottom: 2px solid var(--color-yellow);
 }
@@ -58,9 +59,19 @@
     outline: none;
 
     display: block;
-    
-    
 }
+
+input[type="number"]::-webkit-inner-spin-button { /* Removendo a caixinha giratória do input number*/
+    -webkit-appearance: none;
+}
+
+.input-block .id {
+    width: 3rem;
+    text-align: center;
+    padding: 0;
+}
+
+
 
 .input-block input:focus {
     border: 2px solid var(--color-cyan-weak);
@@ -71,46 +82,52 @@
 }
 
 .input-block input[type="submit"] {
-    margin-top: .5rem;
+    margin-top: 1rem;
     height: 2.8rem;
     background-color: var(--color-yellow);
     color: var(--color-white);
     font-weight: 700;
     font-size: 1.8rem;
     border: none;
-    
 
     transition: background .2s;
-
-
 }
+
+
+/* Create */
 
 .input-block input[type="submit"]:hover {
     background-color: #a8dda8;
 }
  
-
-/* Create */
-
-
 /* Update */
-/* Delete */
 
-
-/*sssssssssssssssss*/
-
-
-/* .create {
-    display: flex;
-    flex-direction: column;
-
-    width: 100%;
-    height: 100%;
-
-    align-items: flex-end;
+.update input[type="submit"]:hover {
+    background-color: #fddb3a;
 }
 
- */
+.input-block:nth-child(6) {
+    width: 3rem;
+    text-align: center;
+    padding: 0;
+    margin-right: calc(100% - 3rem);
+}
+
+.input-block:nth-child(6)label::after {
+    width: 33rem;
+} 
+
+/* Delete */
+
+.delete input[type="submit"] {
+    margin-top: 2rem;
+}
+
+.delete input[type="submit"]:hover {
+    background-color: #f56a79;
+}
+
+
 
 
 
