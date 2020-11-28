@@ -1,0 +1,26 @@
+{
+  "name": "crud-supermarket",
+  "version": "1.0.0",
+  "description": "access: https://julioceno.github.io/crud-supermarket/",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "2.0.6",
+    "nunjucks": "3.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julioceno/crud-supermarket.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/julioceno/crud-supermarket/issues"
+  },
+  "homepage": "https://github.com/julioceno/crud-supermarket#readme"
+}

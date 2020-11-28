@@ -106,7 +106,7 @@ input[type="number"]::-webkit-inner-spin-button { /* Removendo a caixinha girat√
     background-color: #fddb3a;
 }
 
-.input-block:nth-child(6) {
+.update .input-block:nth-child(6) {
     width: 3rem;
     text-align: center;
     padding: 0;
@@ -116,6 +116,20 @@ input[type="number"]::-webkit-inner-spin-button { /* Removendo a caixinha girat√
 .input-block:nth-child(6)label::after {
     width: 33rem;
 } 
+
+.update .error {
+    width: 18.5rem;
+
+    margin: 2rem .8rem 0 0;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #f0134d;
+    letter-spacing: .1rem;
+
+    display: none;
+}
 
 /* Delete */
 
@@ -161,8 +175,10 @@ input[type="number"]::-webkit-inner-spin-button { /* Removendo a caixinha girat√
     height: 4rem;
 }
 
-
+.update .error {
+    width: 25rem;
+    font-size: 2rem;
 }
 
 
-
+}

@@ -6,12 +6,12 @@
     <title>supermarket</title>
 
 
-    <link rel="stylesheet" href="style/main.css">
-    <link rel="stylesheet" href="style/header.css">
-    <link rel="stylesheet" href="style/footer.css">
-    <link rel="stylesheet" href="style/appear-menu.css">
-    <link rel="stylesheet" href="style/options.css">
-    <link rel="stylesheet" href="style/page-panel-controls.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/appear-menu.css">
+    <link rel="stylesheet" href="/css/options.css">
+    <link rel="stylesheet" href="/css/page-panel-controls.css">
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -35,8 +35,8 @@
                     
                 <div class="menu">
                     <ul>
-                        <li><a href="index.html">Consultar produtos</a></li>
-                        <li><a href="administer-product.html">Administrar produtos</a></li>
+                        <li><a href="/">Consultar produtos</a></li>
+                        <li><a href="/administer-products">Administrar produtos</a></li>
                         <li><a  target="_blank" href="https://github.com/julioceno">Github</a></li>
                     </ul>
                 </div>
@@ -46,8 +46,8 @@
         <aside class="appear-menu appear-animation" id="appear-menu">
 
             <nav class="menu-nav">
-                <div><a href="index.html">Consultar produtos</a></div>
-                <div><a href="administer-product.html">Administrar produtos</a></div>
+                <div><a href="/">Consultar produtos</a></div>
+                <div><a href="/administer-products">Administrar produtos</a></div>
                 <div><a target="_blank" href="https://github.com/julioceno">Github</a></div>
             </nav>
           
@@ -68,9 +68,9 @@
                 </label>
 
                 <ul class="select-options low-animation" id="select-options"> 
-                    <li class="create"><a href="options/create.html" id="create">Adicionar</a></li>
-                    <li class="update"><a href="options/update.html" >Atualizar</a></li>
-                    <li class="delete"><a href="options/delete.html" >Deletar</a></li>
+                    <li class="create"><a href="/create" id="create">Adicionar</a></li>
+                    <li class="update"><a href="/update" >Atualizar</a></li>
+                    <li class="delete"><a href="/delete" >Deletar</a></li>
                 </ul>
                 </div>
 
@@ -83,11 +83,8 @@
         <footer class="footer"></footer>
     </div>
 </body>
-<script src="javascript/administer-product.js"></script>
-<script>
-   
-
-</script>
+<script src="/javascript/administer-product.js"></script>
+<script src="/javascript/validateOptions.js"></script>
 </html>
 
 
