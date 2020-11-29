@@ -61,3 +61,14 @@ document.querySelectorAll('.select-options li a').forEach(link => {
 const clickCreate = document.getElementById('create').click()
 
 
+// popup 
+const popup = document.getElementById('popup')
+document.body.onclick = function(e) {
+    popup.style.display = "none"
+}
+
+// pegando o hash 
+const message = (window.location.href).split('?message=')[1]
+if (message === "id&not&registered") {
+    popup.style.display = "flex"
+}

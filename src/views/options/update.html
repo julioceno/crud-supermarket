@@ -1,37 +1,38 @@
-<form action="" class="update">
+<form action="/update-product?_method=PUT" class="update" method="POST">
+    <input type="hidden" name="_method" value="PUT">
 
     <div class="input-block">
         <label for="">Novo Nome do Produto</label>
-        <input type="text" id="validate-name" required>
+        <input type="text" name="newName" id="validate-name" required>
     </div>
 
     <div class="input-block">
         <label for="">Nova url</label>
-        <input type="text" id="validate-url" required>
+        <input type="text" name="newImage" id="validate-url" required>
         
     </div>
 
     <div class="input-block">
         <label for="">Nova Marca</label>
-        <input type="text" id="validate-brand" required>
+        <input type="text" name="newBrand" id="validate-brand" required>
         
     </div>
 
     <div class="input-block">
         <label for="">Novo Preço</label>
     
-        <input type="number" id="validate-price" required>
+        <input type="number" name="newPrice" id="validate-price" required>
         
     </div>
 
     <div class="input-block">
         <label for="">Nova Quantidade</label>
-        <input type="number" id="validate-amount" required>
+        <input type="number" name="newAmount" id="validate-amount" required>
     </div>
 
     <div class="input-block">
         <label for="">Id</label>
-        <input class="id"  type="number" id="validate-id" required>
+        <input class="id"  type="number" name="id" id="validate-id" required>
     </div>
 
     <div class="input-block">

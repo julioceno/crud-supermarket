@@ -8,6 +8,35 @@
     justify-content: space-between;
 }
 
+
+.popup {
+    height: 25rem;
+    width: 25rem;
+    padding-left: 3.5rem;
+    padding-right: 2rem;
+    
+    background-color: var(--color-white);
+    color: #f05454;
+    font-size: 2rem;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    letter-spacing: .1rem;
+
+    position: absolute;
+    top: calc(50% - 12.5rem);
+    left: calc(50% - 12.5rem);
+
+    border-radius: 2rem;
+    border: 3px solid var(--color-grey);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 10;
+    display: none;
+}
+
 .panel-controls {
     background-color: var(--color-cyan);
     height: auto;
@@ -16,6 +45,8 @@
 
     position: relative;
     left: calc(50% - 40%);
+    z-index: 5;
+
 
     border: 2px solid var(--color-grey);
     border-radius: 1rem;

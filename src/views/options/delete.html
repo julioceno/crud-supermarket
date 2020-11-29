@@ -1,13 +1,13 @@
-<form action="" class="delete">
- 
+<form action="/delete-product?_method=DELETE" class="delete" method="POST">
+    <input type="hidden" name="_method" value="DELETE" />
+
     <div class="input-block ">
         <label for="">Id</label>
-        <input class="id" type="number" required>
+        <input class="id" name="id" type="number" required>
         
     </div>
-
+    
     <div class="input-block">
-
         <input type="submit" value="Deletar">
     </div>
 </form>

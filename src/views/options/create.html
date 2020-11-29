@@ -1,32 +1,32 @@
-<form action="/save-product" class="create" >
+<form action="/save-product" method="POST" class="create" >
 
     <div class="input-block">
         <label for="">Nome do produto</label>
-        <input type="text" required>
+        <input type="text" name="name" required>
     </div>
 
     <div class="input-block">
         <label for="">Url da imagem</label>
-        <input type="text" required>
+        <input type="text" name="image" required>
         
     </div>
 
     <div class="input-block">
         <label for="">Marca</label>
-        <input type="text" required>
+        <input type="text" name="brand" required>
         
     </div>
 
     <div class="input-block">
         <label for="">Preço</label>
     
-        <input type="number" required>
+        <input type="number" name="price" required>
         
     </div>
 
     <div class="input-block">
         <label for="">Quantidade</label>
-        <input type="number" required>
+        <input type="number" name="amount" required>
         
     </div>
 
