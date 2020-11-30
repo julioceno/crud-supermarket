@@ -41,4 +41,4 @@ app
 .delete('/delete-product', pages.deleteProduct)
 
 
-.listen(3000)
+.listen(process.env.PORT || 3000)
