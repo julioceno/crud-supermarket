@@ -18,10 +18,15 @@ app
 .use(express.urlencoded({ extended: true }))
 .use(express.static('public'))
 
+// Rotas principais
 .get('/', pages.index)
 .get('/administer-products', pages.administerProducts)
 
-// options
+// Procurar produto
+.post('/search', pages.searchProduct)
+
+
+// Options
 .get('/create', pages.create)
 .get('/update', pages.update)
 .get('/delete', pages.delete)

@@ -57,11 +57,13 @@
                 
                 <h2 class="title">Produtos Cadastrados</h2>
                
-                <div class="search" id="search">
+                <form action="/search" method="POST" class="search" id="search">
                     <input type="submit" value="">
-                    <input type="search" name="" id="" placeholder="Procurar">
+                    <input type="search" name="nameProduct" placeholder="Procurar" required>
+                </form>
+                <div class="message-error" id="message-error">
+                    <p>Produto não encontrado!</p>
                 </div>
-    
 
                 <div class="table">
                     <table>
@@ -79,6 +81,7 @@
                         <tbody>
                                 
                             {% for product in products %}
+                                <tr>
                                 <td>{{product.name}} </td>
                                 <td><img src="{{ product.image }} " alt="{{product.name}}"></td>
                                 <td>{{product.brand}}</td>
@@ -86,8 +89,9 @@
                                 <td>{{product.amount}}</td>
                                 <td>{{product.id}}</td>
                                 </tr>
-
                                 {% endfor %}
+
+
                         </tbody>
                     </table>
                 </div>

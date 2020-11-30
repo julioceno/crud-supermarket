@@ -47,6 +47,8 @@
 }
 
 
+
+
 .search input[type="submit"] {
     width: 3rem;
     background-color: var(--color-white-strong);
@@ -74,6 +76,16 @@
     padding-left: 1rem;
 }
 
+.message-error {
+    margin: 1rem 0 0 4rem;
+
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #f0134d;
+
+    display: none;
+}
 
 
 .table {
@@ -156,6 +168,10 @@ table tbody tr:hover {
     left: calc(50% - 13rem);
 }
 
+.message-error {
+    text-align: center;
+}
+
 table thead tr th {
     padding: 0 1rem 1rem 1rem;
     font-size: 1.5rem;
@@ -188,6 +204,14 @@ table tbody tr td{
 .search input[type="search"] {
     padding-left: 1rem;
 }
+
+.message-error {
+font-size: 2rem;
+margin-top: 2rem;
+}
+
+
+
 
 table tbody tr td {
     width: auto;

@@ -3,40 +3,67 @@ const functionSaveProduct = require('./database/save-products')
 const functionUpdateProduct = require('./database/update-product')
 const functionDeleteProduct = require('./database/delete-product')
 
-console
 module.exports = {
     // Rotas principais
 
     async index(req, resp) {
-        const db = await Database
-        const results = await db.all(`SELECT * FROM products`)
-        const products = results.reverse()
-
-        return resp.render('index.html', {products})
+        try {
+            const db = await Database
+            const products = await db.all(`SELECT * FROM products`)
+    
+            return resp.render('index.html', {products})
+        } catch(e) {
+            console.log(e)
+            resp.send(`
+            <h1> Erro no servidor </h1>
+            <p>Tente novamente, se o erro persistir aguarde uns instantes.</p>
+            `)
+        }
     },
 
     administerProducts(req, resp) {
-        return resp.render('administer-products.html')
+            return resp.render('administer-products.html')
+    },
+
+    // Procurar produtos 
+    async searchProduct(req, resp) {
+        const field = req.body
+         try {
+                const db = await Database
+                const products = await db.all(` SELECT * FROM products WHERE name = "${field.nameProduct}"`)
+
+                if (!products[0]) {
+                 resp.redirect('/' + '?message=product&not&avaliable')
+                 return
+                }
+
+            return resp.render('index.html', { products })
+        }  catch(e) {
+            console.log(e)
+            resp.send(`
+            <h1> Erro no servidor </h1>
+            <p>Tente novamente, se o erro persistir aguarde uns instantes.</p>
+            `)
+        }
     },
 
     // Opções do painel de controle
 
     create(req, resp) {
-        return resp.render('options/create.html')
+            return resp.render('options/create.html')
     },
 
     update(req, resp) {
-        return resp.render('options/update.html')
+            return resp.render('options/update.html')
     },
 
     delete(req, resp) {
-        return resp.render('options/delete.html')
+            return resp.render('options/delete.html')
     },
 
     // Salvar produto
     async saveProduct(req, resp) {
         const fields = req.body 
-        
         try {
             const db = await Database
 
@@ -94,7 +121,6 @@ module.exports = {
 
             if (!chekingId[0]) {
                 resp.redirect('/administer-products' + '?message=id&not&registered')
-
                 return
             }
 
@@ -110,8 +136,5 @@ module.exports = {
             console.log(e)
         }
 
-    }
-         
-
-
+    },
 }

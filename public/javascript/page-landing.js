@@ -28,3 +28,11 @@ function menuHamburguer() {
   window.addEventListener('resize', function(){
       menuHamburguer();
   });
+
+// mensagem de erro
+const errorContainer = document.getElementById("message-error")
+const message = (window.location.href).split('?message=')[1]
+console.log(message)
+if (message === "product&not&avaliable") {
+    errorContainer.style.display = "block"
+}

@@ -43,9 +43,6 @@ function menuHamburguer() {
 
 
   // select option
-
-
-
 const contentOption = document.getElementById('option') 
 document.querySelectorAll('.select-options li a').forEach(link => {
     link.onclick = function(e) {

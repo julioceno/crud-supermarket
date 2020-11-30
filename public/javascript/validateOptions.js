@@ -9,10 +9,10 @@ function validate(event) {
 
     if (!(name.value) && !(url.value) && !(brand.value) && !(price.value) && !(amount.value)) {
         event.preventDefault()
-        document.getElementById('error').style.display = "block"
+        document.getElementById('message-error').style.display = "block"
         return
     } else {
-        document.getElementById('error').style.display = "none"
+        document.getElementById('message-error').style.display = "none"
 
     }
 
