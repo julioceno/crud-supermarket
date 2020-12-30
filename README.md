@@ -1,3 +1,3 @@
 # crud-supermarket
 
-access: https://coronac-app.herokuapp.com/
+access: https://crud-supermarket.herokuapp.com/
